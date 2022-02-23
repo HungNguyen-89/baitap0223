@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Nhập vào giá trị a :<br>
+    <input type="text" id="txt1"><br><br>
+    Nhập vào giá trị b :<br>
+    <input type="text" id="txt2">
+    <button type="button" onclick="myFunction()">Click</button>
+    <p id="output">Tổng các số từ a đến b là: </p>
+    <script>
+        function myFunction()
+        {
+            let a = +document.getElementById("txt1").value;
+            let b = +document.getElementById("txt2").value;           
+            let tong=0;
+            let i;
+            for (i=a; i<=b; i++)
+            {tong+=i;}
+            document.getElementById("output").innerHTML = "Tổng các số từ a đến b là: " + tong;
+        }
+    </script>
+</body>
+</html>

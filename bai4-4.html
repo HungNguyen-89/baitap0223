@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Nhập vào giá trị a :<br>
+    <input type="text" id="txt1">
+    <button type="button" onclick="myFunction()">Click</button>
+    <p id="output">Năm đó thuộc thế kỷ : </p>
+    <script>
+
+        function myFunction() {
+            let a = +document.getElementById("txt1").value;
+            let theky;
+            if (a % 100 == 0) { theky = parseInt(a / 100); }
+            else { theky = parseInt(a / 100) + 1; }
+            document.getElementById("output").innerHTML = "Năm đó thuộc thế kỷ : " + theky;
+        }
+    </script>
+</body>
+</html>
